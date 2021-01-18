@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>有趣的小插件 | 桃花源</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="终究意难平">
+    
+    <link rel="preload" href="/assets/css/0.styles.775e5fee.css" as="style"><link rel="preload" href="/assets/js/app.69870c17.js" as="script"><link rel="preload" href="/assets/js/2.5498bb0a.js" as="script"><link rel="preload" href="/assets/js/10.0ab21fd6.js" as="script"><link rel="prefetch" href="/assets/js/11.d00d1a7e.js"><link rel="prefetch" href="/assets/js/12.18b0a5b6.js"><link rel="prefetch" href="/assets/js/13.2831c88e.js"><link rel="prefetch" href="/assets/js/14.87c318ed.js"><link rel="prefetch" href="/assets/js/15.c4a60100.js"><link rel="prefetch" href="/assets/js/16.9c42b8d2.js"><link rel="prefetch" href="/assets/js/3.6391a0d0.js"><link rel="prefetch" href="/assets/js/4.a9ff007e.js"><link rel="prefetch" href="/assets/js/5.b07d5bee.js"><link rel="prefetch" href="/assets/js/6.e1328806.js"><link rel="prefetch" href="/assets/js/7.74761d58.js"><link rel="prefetch" href="/assets/js/8.b330f4c6.js"><link rel="prefetch" href="/assets/js/9.2009698a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.775e5fee.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="桃花源" class="logo"> <span class="site-name can-hide">桃花源</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/html/js/" class="nav-link router-link-active">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/html/node/" class="nav-link">
+  node
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/html/js/" class="nav-link router-link-active">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/html/node/" class="nav-link">
+  node
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>js插件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/html/js/js插件.html" class="active sidebar-link">有趣的小插件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html/js/js插件.html#toast提示" class="sidebar-link">Toast提示</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="有趣的小插件"><a href="#有趣的小插件" class="header-anchor">#</a> 有趣的小插件</h1> <h2 id="toast提示"><a href="#toast提示" class="header-anchor">#</a> Toast提示</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">toast</span><span class="token punctuation">(</span><span class="token parameter">msg<span class="token punctuation">,</span>duration</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	duration <span class="token operator">=</span> <span class="token function">isNaN</span><span class="token punctuation">(</span>duration<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">3000</span> <span class="token operator">:</span> duration<span class="token punctuation">;</span>	
+	<span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	div<span class="token punctuation">.</span>innerHTML  <span class="token operator">=</span> msg<span class="token punctuation">;</span>
+	div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+		max-width:60%;min-width:150px;height:3rem;line-height:3rem;padding:0 14px;
+		text-align: center;border-radius: 4px;
+		font-size:1.3rem;color:rgb(255, 255, 255);background:rgba(0, 0, 0,.5);
+		position:fixed;top:50%;left:50%;transform:translate(-50%,-50%),z-index:9999;
+	</span><span class="token template-punctuation string">`</span></span>
+	document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>div<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+		div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>webkitTransition <span class="token operator">=</span> <span class="token string">&quot;-webkit-transform &quot;</span> <span class="token operator">+</span> d <span class="token operator">+</span> <span class="token string">&quot;s ease-in, opacity &quot;</span> <span class="token operator">+</span> d <span class="token operator">+</span> <span class="token string">&quot;s ease-in&quot;</span><span class="token punctuation">;</span>
+		div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>opacity <span class="token operator">=</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">;</span>
+		<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>div<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>d<span class="token operator">*</span><span class="token number">1000</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>duration<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">toast</span><span class="token punctuation">(</span><span class="token string">'Hello word'</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="csstext"><a href="#csstext" class="header-anchor">#</a> cssText</h3> <ul><li>cssText的本质就是设置HTML元素的style属性</li> <li>cssText的使用优势
+<ul><li>一般情况使用js设置元素对象样式会使用element.style.width=&quot;20px&quot;这种方法。</li> <li>但是这样样式一多，代码就会重复，而且通过JS来覆写对象样式是比较典型的一种销毁原样式并重建的过程，这种销毁和重建都会增加浏览器的开销。</li> <li>js中有cssText方法：<div class="language-javascript extra-class"><pre class="language-javascript"><code>	obj<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token string">&quot;width:150px;height:3rem;line-height:3rem;&quot;</span>
+</code></pre></div></li> <li>但是，这样会有一个问题，会把原有的cssText清掉，可以采用cssText累加的方法：<div class="language-javascript extra-class"><pre class="language-javascript"><code>	obj<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">+=</span> <span class="token string">&quot;width:150px;height:3rem;line-height:3rem;&quot;</span>
+	obj<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">+=</span> <span class="token string">&quot;;width:150px;height:3rem;line-height:3rem;&quot;</span><span class="token comment">//在IE中</span>
+</code></pre></div></li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.69870c17.js" defer></script><script src="/assets/js/2.5498bb0a.js" defer></script><script src="/assets/js/10.0ab21fd6.js" defer></script>
+  </body>
+</html>
