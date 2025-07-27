@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#00008B"/>
+  <!-- Union Jack -->
+  <g transform="translate(300, 150) scale(0.5)">
+    <rect width="600" height="300" fill="#00008B"/>
+    <path d="M0,0 L600,300 M600,0 L0,300" stroke="#ffffff" stroke-width="60"/>
+    <path d="M0,0 L600,300 M600,0 L0,300" stroke="#ff0000" stroke-width="40"/>
+    <path d="M300,0 L300,300 M0,150 L600,150" stroke="#ffffff" stroke-width="100"/>
+    <path d="M300,0 L300,300 M0,150 L600,150" stroke="#ff0000" stroke-width="60"/>
+  </g>
+  <!-- Commonwealth Star -->
+  <g fill="#ffffff">
+    <path d="M600,140 L615,185 L660,185 L625,215 L640,260 L600,235 L560,260 L575,215 L540,185 L585,185 Z"/>
+  </g>
+  <!-- Southern Cross -->
+  <g fill="#ffffff">
+    <path d="M750,150 L760,180 L790,180 L765,200 L775,230 L750,210 L725,230 L735,200 L710,180 L740,180 Z"/>
+    <path d="M750,350 L755,365 L770,365 L760,375 L765,390 L750,380 L735,390 L740,375 L730,365 L745,365 Z"/>
+    <path d="M650,250 L655,265 L670,265 L660,275 L665,290 L650,280 L635,290 L640,275 L630,265 L645,265 Z"/>
+    <path d="M850,250 L855,265 L870,265 L860,275 L865,290 L850,280 L835,290 L840,275 L830,265 L845,265 Z"/>
+    <path d="M900,400 L905,415 L920,415 L910,425 L915,440 L900,430 L885,440 L890,425 L880,415 L895,415 Z"/>
+  </g>
+</svg>

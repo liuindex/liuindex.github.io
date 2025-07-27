@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1235 650">
+  <rect width="1235" height="650" fill="#bf0a30"/>
+  <g fill="#ffffff">
+    <rect y="50" width="1235" height="50"/>
+    <rect y="150" width="1235" height="50"/>
+    <rect y="250" width="1235" height="50"/>
+    <rect y="350" width="1235" height="50"/>
+    <rect y="450" width="1235" height="50"/>
+    <rect y="550" width="1235" height="50"/>
+  </g>
+  <rect width="494" height="350" fill="#002868"/>
+  <g fill="#ffffff">
+    <!-- 50 stars -->
+    <g id="s5">
+      <g id="s4">
+        <g id="s3">
+          <g id="s2">
+            <g id="s1">
+              <path d="M45,60 L48,68 L56,68 L50,73 L52,81 L45,76 L38,81 L40,73 L34,68 L42,68 Z"/>
+            </g>
+            <use href="#s1" x="82"/>
+          </g>
+          <use href="#s2" x="164"/>
+        </g>
+        <use href="#s3" x="328"/>
+      </g>
+      <use href="#s4" y="70"/>
+    </g>
+    <use href="#s5" y="140"/>
+    <use href="#s5" y="210"/>
+    <use href="#s5" y="280"/>
+  </g>
+</svg>
