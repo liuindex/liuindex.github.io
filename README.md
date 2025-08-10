@@ -58,3 +58,9 @@ npm run dev
 ## 许可证
 
 MIT
+
+
+## 部署到github pages操作流程
+npm run build
+out文件夹下的 .nojekyll 文件
+npm run deploy
