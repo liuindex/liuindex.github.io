@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 图像处理编辑器
 
-## Getting Started
+一个简单易用的在线头像编辑工具，可以为头像添加国旗边框。
 
-First, run the development server:
+## 功能特点
+
+- 响应式设计，适配移动端和桌面端
+- 支持上传头像图片
+- 提供多种国旗边框选择
+- 可自定义边框宽度和颜色
+- 支持导出为PNG和JPG格式
+- 支持GitHub Pages自动部署
+
+## 技术栈
+
+- [Next.js](https://nextjs.org) - React框架
+- [Shadcn UI](https://ui.shadcn.com) - 组件库
+- [Tailwind CSS](https://tailwindcss.com) - 样式框架
+- [React Dropzone](https://react-dropzone.js.org) - 文件上传
+- [html-to-image](https://github.com/bubkoo/html-to-image) - 图像导出
+- [React Colorful](https://github.com/omgovich/react-colorful) - 颜色选择器
+
+## 本地开发
+
+1. 克隆仓库
+
+```bash
+git clone https://github.com/yourusername/avatar-editor.git
+cd avatar-editor
+```
+
+2. 安装依赖
+
+```bash
+npm install
+```
+
+3. 启动开发服务器
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. 在浏览器中打开 [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 部署
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+项目配置了GitHub Actions工作流，可以自动部署到GitHub Pages。
 
-## Learn More
+1. Fork这个仓库
+2. 在仓库设置中启用GitHub Pages，选择GitHub Actions作为部署源
+3. 推送代码到main分支，或手动触发工作流
 
-To learn more about Next.js, take a look at the following resources:
+## 自动更新
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+项目配置了定时任务，每天自动构建并部署最新版本。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 许可证
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
